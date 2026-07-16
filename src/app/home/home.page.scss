@@ -1,0 +1,105 @@
+.post {
+  border-top: 0.5px solid rgb(227, 227, 227);
+
+  ion-avatar {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+  }
+
+  label {
+    display: inline-block;
+    line-height: 38px;
+    padding-left: 8px;
+    vertical-align: top;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.menu {
+  text-align: right;
+  vertical-align: -webkit-baseline-middle;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.image {
+  max-height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.icons {
+  font-size: 23px;
+  width: 30px;
+}
+
+.caption {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -2px;
+  margin-bottom: 20px;
+
+  .writer {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .time {
+    font-size: 5px;
+    color: rgb(168, 168, 168);
+    font-family: system-ui;
+  }
+}
+
+.story-div {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  overflow: overlay;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.story-main {
+  display: flex;
+}
+
+.story {
+  display: contents;
+
+  img {
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 3px rgb(178, 120, 183);
+  }
+}
+
+.text {
+  text-align: left;
+  padding-left: 3px;
+  font-family: system-ui !important;
+  font-size: 13px !important;
+}
+
+.endComment{
+    width: 100%;
+    margin: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+
+    ion-icon{
+        padding-right: 38px;
+        padding-left: 10px;
+    }
+}

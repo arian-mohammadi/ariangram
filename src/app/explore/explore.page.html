@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Explorer
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="profile-content">
+
+    <ion-searchbar placeholder="Search your developer..." class="ion-margin"></ion-searchbar>
+
+    <ion-grid>
+      <ion-row *ngFor="let i of [1, 2, 3]">
+        <ion-col><img class="image" src="assets/images/posts/{{i}}.jpg"></ion-col>
+        <ion-col><img class="image" src="assets/images/posts/{{i+1}}.jpg"></ion-col>
+        <ion-col><img class="image" src="assets/images/posts/{{i+2}}.jpg"></ion-col>
+      </ion-row>
+      <ion-row *ngFor="let i of [1, 2, 3]">
+        <ion-col><img class="image" src="assets/images/posts/{{i}}.jpg"></ion-col>
+        <ion-col><img class="image" src="assets/images/posts/{{i+1}}.jpg"></ion-col>
+        <ion-col><img class="image" src="assets/images/posts/{{i+2}}.jpg"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+</ion-content>

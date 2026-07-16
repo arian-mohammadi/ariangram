@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Post
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="post-image">
+
+    <div class="post-image2">
+      <img src="assets/images/upload.png">
+    </div>
+
+  </div>
+
+  <div class="post-text ion-padding">
+    <ion-list>
+      <ion-item lines="full">
+        <ion-select label="Category" cancelText="Close" interface="action-sheet" placeholder="Select Post Category">
+          <ion-select-option value="personal">Personal</ion-select-option>
+          <ion-select-option value="project">Send Project</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-input label="Title" placeholder="Enter Post Title"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-textarea label="Caption" rows="5" placeholder="Type something here."></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <ion-button size="small" expand="block" color="">Post</ion-button>
+  </div>
+
+
+
+
+</ion-content>

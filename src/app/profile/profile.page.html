@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <div class="profile-image">
+          <img src="assets/images/users/1.jpg" alt="">
+        </div>
+      </ion-col>
+
+      <ion-col size="8">
+        <div class="profile-numbers">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4"><span class="numbers">10</span><br>Posts</ion-col>
+              <ion-col size="4"><span class="numbers">{{followNumber}}</span><br>Followers</ion-col>
+              <ion-col size="4"><span class="numbers">120</span><br>Following</ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <div class="bio-div">
+    <ion-row>
+      <ion-col>
+        <span class="username">Arian Mohammadi </span>
+        <span class="description">Web developer</span><br>
+        <span class="bio">I'm a programmer and frontend developer...</span>
+      </ion-col>
+    </ion-row>
+  </div>
+
+
+
+  <div class="profile-button">
+    <ion-row>
+      <ion-col><ion-button size="small" expand="block" class="ion-margin-top" (click)="toggleFollow()"
+          [color]="isFollowing ? 'medium' : 'primary'" [fill]="isFollowing ? 'outline' : 'solid'">
+          {{isFollowing? 'Unfollow' : 'Follow'}}</ion-button>
+      </ion-col>
+      <ion-col><ion-button size="small" color="light" expand="block"
+          class="ion-margin-top">Message</ion-button></ion-col>
+    </ion-row>
+  </div>
+
+  <div class="profile-segmention ion-padding-top ion-padding-buttom">
+    <ion-segment value="heart">
+      <ion-segment-button value="home">
+        <ion-icon name="grid-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="heart">
+        <ion-icon name="heart-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="bookmarks">
+        <ion-icon name="bookmarks-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div class="profile-content">
+    <ion-grid>
+      <ion-row *ngFor="let i of [1, 2, 3]">
+        <ion-col><img src="assets/images/posts/{{i}}.jpg"></ion-col>
+        <ion-col><img src="assets/images/posts/{{i+1}}.jpg"></ion-col>
+        <ion-col><img src="assets/images/posts/{{i+2}}.jpg"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+</ion-content>

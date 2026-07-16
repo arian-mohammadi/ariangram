@@ -1,0 +1,35 @@
+.post-image {
+  width: 100%;
+  padding: 20px;
+}
+
+.post-image2 {
+  background-color: rgb(238, 238, 238);
+  height: 190px;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 70px;
+  border: 1px solid rgb(218, 218, 218);
+
+  img {
+    width: 70px;
+  }
+}
+
+.post-text {
+  width: 100%;
+  ion-input {
+    font-family: system-ui;
+  }
+  ion-select {
+    font-family: system-ui;
+  }
+  ion-textarea {
+    font-family: system-ui;
+  }
+}
+
+
+
+

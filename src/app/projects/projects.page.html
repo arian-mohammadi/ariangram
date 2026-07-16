@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Projects</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-searchbar placeholder="Search Project"></ion-searchbar>
+
+  <ion-list *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+    <ion-item lines="none">
+      <ion-chip>
+        <ion-avatar>
+          <img src="assets/images/users/{{i}}.jpg" />
+        </ion-avatar>
+        <ion-label>Ariangram</ion-label>
+      </ion-chip>
+      <ion-label class="text">this project is very cool...</ion-label>
+      <br>
+
+    </ion-item>
+
+    <ion-item lines="full">
+      <div class="project-view">
+        <ion-icon name="eye-outline"></ion-icon> 32K
+      </div>
+
+      <div class="project-users">
+        <img src="assets/images/users/9.jpg" />
+        <img src="assets/images/users/1.jpg" />
+        <img src="assets/images/users/2.jpg" />
+        <img src="assets/images/users/3.jpg" />
+        <img src="assets/images/users/4.jpg" />
+        <img src="assets/images/users/5.jpg" />
+        <img src="assets/images/users/6.jpg" />
+      </div>
+    </ion-item>
+
+
+  </ion-list>
+
+
+</ion-content>
