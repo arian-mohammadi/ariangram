@@ -103,3 +103,13 @@
         padding-left: 10px;
     }
 }
+
+
+ion-modal {
+  --width: 100%;
+  --max-width: 550px; 
+  
+  // left: 0 !important;
+  // right: 0 !important;
+  margin: 0 auto !important;
+}
