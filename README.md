@@ -46,7 +46,7 @@ To run this project locally, make sure you have [Node.js](https://nodejs.org/) i
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/arian-mohammadi/ariangram.git
+   https://github.com/arian-mohammadi/ariangram.git
 
 1. **Navigate into the project directory:**
 cd ariangram
